@@ -13,6 +13,19 @@
   margin-bottom: 20px;
 }
 
+.addSession {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
 .button {
   margin: 5px;
   padding: 10px 20px;
@@ -28,6 +41,21 @@
   background-color: #2980b9;
 }
 
+.deleteButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
 .sessionList {
   margin-top: 20px;
 }
@@ -38,5 +66,11 @@
 }
 
 .sessionList li {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

@@ -13,6 +13,45 @@
     margin-bottom: 20px;
   }
   
+  .animationContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 4s, height 4s;
+  }
+  
+  .step0 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .step1 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .step2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .step3 {
+    width: 150px;
+    height: 150px;
+  }
+  
   .step {
     font-size: 24px;
     font-weight: bold;

@@ -15,6 +15,9 @@ const BreathingExercise = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Дыхательные Упражнения</h2>
+      <div className={styles.animationContainer}>
+        <div className={`${styles.circle} ${styles[`step${step}`]}`}></div>
+      </div>
       <div className={styles.step}>{steps[step]}</div>
     </div>
   );
