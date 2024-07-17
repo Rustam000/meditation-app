@@ -16,10 +16,10 @@ nav ul {
   padding: 0;
 }
 
-nav li {
+/* nav li {
   display: inline;
   margin: 0 10px;
-}
+} */
 
 button {
   margin: 5px;
@@ -33,4 +33,8 @@ button {
 
 button:hover {
   background-color: #2980b9;
+}
+
+link{
+  text-decoration: none;
 }

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.sessionList {
+  margin-top: 20px;
+}
+
+.sessionList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sessionList li {
+  margin-bottom: 10px;
+}

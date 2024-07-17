@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from './Timer.module.css';
 
 const Timer = () => {
   const [time, setTime] = useState(300); // 5 минут
@@ -27,11 +28,11 @@ const Timer = () => {
   };
 
   return (
-    <div>
-      <h2>Таймер Медитации</h2>
-      <div>{`${Math.floor(time / 60)}:${time % 60 < 10 ? '0' : ''}${time % 60}`}</div>
-      <button onClick={handleStart}>Старт</button>
-      <button onClick={handleReset}>Сброс</button>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Таймер Медитации</h2>
+      <div className={styles.timeDisplay}>{`${Math.floor(time / 60)}:${time % 60 < 10 ? '0' : ''}${time % 60}`}</div>
+      <button className={styles.button} onClick={handleStart}>Старт</button>
+      <button className={styles.button} onClick={handleReset}>Сброс</button>
     </div>
   );
 };

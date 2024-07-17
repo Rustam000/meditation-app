@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from './BreathingExercise.module.css';
 
 const BreathingExercise = () => {
   const [step, setStep] = useState(0);
@@ -12,9 +13,9 @@ const BreathingExercise = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Дыхательные Упражнения</h2>
-      <div>{steps[step]}</div>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Дыхательные Упражнения</h2>
+      <div className={styles.step}>{steps[step]}</div>
     </div>
   );
 };
